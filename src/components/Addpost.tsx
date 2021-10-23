@@ -4,7 +4,7 @@ import { blogPost } from "../types/postTypes";
 type Props = {
   savePost: (e: React.FormEvent, formData: blogPost) => void;
 };
-export const addPost: React.FC<Props> = ({ savePost }) => {
+export const AddPost: React.FC<Props> = ({ savePost }) => {
   const [formData, setFormData] = useState<blogPost>();
 
   const handleFormData = (e: React.FormEvent<HTMLInputElement>): void => {
