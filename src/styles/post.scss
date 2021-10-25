@@ -1,0 +1,22 @@
+.card{
+  background: white;
+  width:49vw;
+  margin: auto;
+  text-align:center;
+  border-radius: 8px;
+  height:23vh;
+  text-align:center;
+  margin-top: 12px;
+  padding:12px;
+
+  .card-body{
+    width:40vw;
+    margin:auto;
+    text-align:center;
+    .card-body-description{
+      font-size:18px;
+      font-weight:400;
+      
+    }
+  }
+}
