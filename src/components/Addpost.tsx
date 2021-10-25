@@ -7,7 +7,9 @@ type Props = {
 export const AddPost: React.FC<Props> = ({ savePost }) => {
   const [formData, setFormData] = useState<blogPost>();
 
-  const handleFormData = (e: React.FormEvent<HTMLInputElement>): void => {
+  const handleFormData = (
+    e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
     setFormData({
       ...formData,
       [e.currentTarget.id]: e.currentTarget.value,
@@ -23,7 +25,7 @@ export const AddPost: React.FC<Props> = ({ savePost }) => {
         </div>
         <div className="Form--field">
           <label htmlFor="body">Description</label>
-          <input type="text" id="body" onChange={handleFormData} />
+          <textarea id="body" onChange={handleFormData} />
         </div>
       </div>
 

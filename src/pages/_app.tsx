@@ -4,6 +4,7 @@ import Posts from "../components/post";
 import { AddPost } from "../components/Addpost";
 import { blogPost } from "../types/postTypes";
 import "../styles/index.scss";
+import "../styles/addpost.scss";
 
 const API_URL: string = "https://jsonplaceholder.typicode.com/posts";
 
