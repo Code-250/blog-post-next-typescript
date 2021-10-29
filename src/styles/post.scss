@@ -4,7 +4,8 @@
   margin: auto;
   text-align:center;
   border-radius: 8px;
-  height:23vh;
+  height:auto;
+  min-height:23vh;
   text-align:center;
   margin-top: 12px;
   padding:12px;
@@ -18,5 +19,18 @@
       font-weight:400;
       
     }
+  }
+  .icon-actions{
+    display:flex;
+    justify-content: space-around;
+    line-height:.2;
+    padding-top:5px;
+    .icon{
+      cursor:pointer;
+      .icon-action{
+        color:blueviolet;
+      }
+    }
+
   }
 }
