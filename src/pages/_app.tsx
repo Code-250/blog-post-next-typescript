@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Posts from "../components/post";
+import { Navbar } from "../navbar/navbar";
 import { AddPost } from "../components/Addpost";
 import { blogPost } from "../types/postTypes";
 import axios from "axios";
 import "../styles/index.scss";
 import "../styles/addpost.scss";
 import "../styles/post.scss";
+import "../styles/navbar.scss";
 
 const API_URL: string = "https://jsonplaceholder.typicode.com/posts";
 
@@ -37,18 +39,21 @@ function MyApp() {
   // if (!postList) return <h1>Loading....</h1>;
 
   return (
-    <main className="container">
-      <h1>Posts</h1>
-      <AddPost savePost={addPost} />
-      {!postList ? (
-        <h1>Loading....</h1>
-      ) : (
-        postList[0]?.data.map((post: blogPost) => (
-          <Posts key={post.id} post={post} />
-        ))
-        // ""
-      )}
-    </main>
+    <>
+      <Navbar />
+      <main className="container">
+        <h1>Posts</h1>
+        <AddPost savePost={addPost} />
+        {!postList ? (
+          <h1>Loading....</h1>
+        ) : (
+          postList[0]?.data.map((post: blogPost) => (
+            <Posts key={post.id} post={post} />
+          ))
+          // ""
+        )}
+      </main>
+    </>
   );
 }
 

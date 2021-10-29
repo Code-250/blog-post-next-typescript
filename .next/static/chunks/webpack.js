@@ -91,8 +91,6 @@
 /******/ 		};
 /******/ 	}();
 /******/ 	
-<<<<<<< HEAD
-=======
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -105,7 +103,6 @@
 /******/ 		};
 /******/ 	}();
 /******/ 	
->>>>>>> d2b71f446b3a27989ceda4a1b3c0e5155298fdb2
 /******/ 	/* webpack/runtime/create fake namespace object */
 /******/ 	!function() {
 /******/ 		var getProto = Object.getPrototypeOf ? function(obj) { return Object.getPrototypeOf(obj); } : function(obj) { return obj.__proto__; };
@@ -186,11 +183,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-<<<<<<< HEAD
-/******/ 		__webpack_require__.h = function() { return "d93c57a43c2898683e49"; }
-=======
-/******/ 		__webpack_require__.h = function() { return "6d03bc7ba733afbaf20f"; }
->>>>>>> d2b71f446b3a27989ceda4a1b3c0e5155298fdb2
+/******/ 		__webpack_require__.h = function() { return "2a45b479479282ee15d9"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -205,8 +198,6 @@
 /******/ 		})();
 /******/ 	}();
 /******/ 	
-<<<<<<< HEAD
-=======
 /******/ 	/* webpack/runtime/harmony module decorator */
 /******/ 	!function() {
 /******/ 		__webpack_require__.hmd = function(module) {
@@ -222,7 +213,6 @@
 /******/ 		};
 /******/ 	}();
 /******/ 	
->>>>>>> d2b71f446b3a27989ceda4a1b3c0e5155298fdb2
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }

@@ -1,0 +1,57 @@
+.nav-container{
+  min-height:2vh;
+  height:auto;
+  background-color: white;
+  width:98.1vw;
+  padding:5px;
+  box-shadow: 0 0 10px rgb(194, 192, 192);
+  .content-container{
+    width:95%;
+    display:flex;
+    margin:auto;
+    align-items:center;
+    justify-content: space-between;
+
+    .web-logo{
+      padding:5px;
+      font-size: large;
+      p{
+        color:rgb(129, 47, 197);
+        font-weight: 600;
+        font-size:large
+      }
+    }
+    .nav-btn{
+      width: 22vw;
+      display:flex;
+      justify-content: space-between;
+
+      .nav-login{
+        padding:5px;
+        width:7vw;
+        font-weight:600;
+        font-size:18px;
+        border:none;
+        background-color:rgb(129, 47, 197);
+        color:white;
+        cursor:pointer;
+        border-radius: 8px;
+      }
+      .nav-create{
+        padding:8px;
+        width:12vw;
+        font-weight:600;
+        font-size:18px;
+        border-radius: 8px;
+        background:none;
+        cursor:pointer;
+        border-radius: 8px;
+        border:none;
+      }
+      :hover{
+        background-color: rgb(129, 47, 197);
+        color:white;
+      }
+    }
+  }
+}
